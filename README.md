@@ -184,6 +184,7 @@ Le temps de calcul élevé ne permet pas d’envisager le traitement de fichiers
 <figcaption><font color=gray><i>Figure 1 - logs de l'étape de shuffle sur les 3 machines</i></font></figcaption>
 </center>
 
+
 <i>Remarque : le temps de traitement total de la phase de shuffle est approximativement égal au temps de traitement pour la machine disposant du plus grand nombre de fichiers. Cette observation rend bien compte de la parallélisation des calculs entre les 3 machines.</i>
 
 <h2 id="ref3">3. Programme amélioré</h2>
