@@ -1,8 +1,6 @@
 <h1 align=center>Conception d'une maquette basée sur le système MapReduce</h1>
 
-<i><span style="color:blue">Remarque préliminaire : le code source de ce projet est disponible dans les différents fichiers \*.py de ce repo.</span></i>
-
-<span style="color:blue">some *blue* text</span>.
+<i>Remarque préliminaire : le code source de ce projet est disponible dans les différents fichiers \*.py de ce repo.</i>
 
 <h2>Table des matières</h2>
 
