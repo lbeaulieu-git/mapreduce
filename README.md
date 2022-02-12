@@ -413,8 +413,8 @@ Il est encore possible d’améliorer le programme afin de maximiser sa vitesse 
 - Utilisation d’un nombre différent de machines pour les différentes phases (ex : 15 machines pour le split, 10 machines pour le shuffle),
 - Dimensionnement automatique du cluster en fonction de la taille du fichier,
 - Connexion automatique à un nombre de machines donné en début de programme (avec réallocation des connexions échouées),
-- Gestion d’une panne de machine et réallocation des calculs pendant l’exécution, suivant le principe utilisé dans la version originale de MapReduce **( * )** (3.3 Fault Tolerance).
+- Gestion d’une panne de machine et réallocation des calculs pendant l’exécution, suivant le principe utilisé dans la version originale de MapReduce **(\*)** (3.3 Fault Tolerance).
 
-L’une des étapes structurantes du programme créé est le split en fonction du nombre de machines du cluster. Or, la version originale de MapReduce utilise des tailles de splits standardisée à 64 Mo et dimensionne le cluster à partir du nombre de blocs créés, comme indiqué dans l’article « MapReduce: Simplified Data Processing on Large Clusters » de Jeffrey Dean et Sanjay Ghemawat **( * )** (page 4). Il pourrait être intéressant de tester cette approche. Pour le fichier de 381 Mo, cela correspondrait à un cluster de 6 machines (dont le temps de calcul approche le temps optimal comme vu plus haut).
+L’une des étapes structurantes du programme créé est le split en fonction du nombre de machines du cluster. Or, la version originale de MapReduce utilise des tailles de splits standardisée à 64 Mo et dimensionne le cluster à partir du nombre de blocs créés, comme indiqué dans l’article « MapReduce: Simplified Data Processing on Large Clusters » de Jeffrey Dean et Sanjay Ghemawat **(\*)** (page 4). Il pourrait être intéressant de tester cette approche. Pour le fichier de 381 Mo, cela correspondrait à un cluster de 6 machines (dont le temps de calcul approche le temps optimal comme vu plus haut).
 
-( * ) https://research.google.com/archive/mapreduce-osdi04.pdf
+(\*) https://research.google.com/archive/mapreduce-osdi04.pdf
